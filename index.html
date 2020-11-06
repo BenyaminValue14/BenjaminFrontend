@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle"></div>
+      <ul class="menu">
+        <li><a href="#home" class="indice">Home</a></li>
+        <li><a href="#about" onclick="mover()">Sobre mi</a></li>
+        <li><a href="#services" onclick="mover()">Servicios</a></li>
+        <li><a href="#work" onclick="mover()">Trabajos</a></li>
+        <li><a href="#testimonios" onclick="mover()">Testimonios</a></li>
+        <li><a href="#contacto" onclick="mover()">Contacto</a></li>
+      </ul>
+    </header>
+    <!-- BANNER O LO QUE APARECE PRIMERO -->
+    <section class="banner" id='home'>
+      <div class="textBx">
+        <h2>Hola, <br/> Me llamo <strong> <span> Benjamin P. Chanca</span></strong> </h2>
+        <h3>Frontend Developer</h3>
+        <a href="#about" class="btn" id='firstBtn'>Sigueme</a>
+      </div>
+    </section>
+    <!-- SECCION DEL ABOUT -->
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>Sobre Mi</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>Frontend Developer</h3>
+          <p>Soy una persona una apasionada por la tecnología y me empecé a desempeñar en
+            el desarrollo de las páginas y aplicaciones Web a inicios del año 2020. Con el pasar
+            del tiempo se me presentaron otras oportunidades relacionadas a mi especialidad.
+            De las que he participado en distintos proyectos.
+            Actualmente curso una carrera empresarial
+            en la Universidad Científica del Sur.<br><br>
+            Mi desempeño se ha demostrado en los diversos trabajos y proyectos
+            que he realizado para distintos clientes.
+          Lo que me diferencia es desarrollar proyectos únicos y personalizados
+        para cada clieente, siguiendo la temática de cada uno.</p>
+        </div>
+        <div class="contentBx w50">
+          <img src="./img/aboutMe2.jpg" class="img">
+        </div>
+      </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section class="services" id='services'>
+      <div class="heading">
+        <h2>Servicios</h2>
+        <p>Estos son los servicios que he realizado y participado en mi experiencia
+          como Frontend Developer.
+          </p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="./img/icon1.png">
+          <h2>Diseño Web</h2>
+          <p>Creación de diseño de páginas web. Administrando el contenido del
+          sitio web.<br>Diseños personalizados y siguiendo la temática de la empresa</p>
+        </div>
+        <div class="servicesBx">
+          <img src="./img/icon2.png">
+          <h2>Desarrollar apps Web</h2>
+          <p>Desarrollo de Aplicaciones web que interactúan con el usuario, que incluyan un
+          servidor para la empresa (Intranet, Progressive Web Aplication)</p>
+        </div>
+        <div class="servicesBx">
+          <img src="./img/icon3.png">
+          <h2>Aplicaciones Android</h2>
+          <p>Desarrollo de aplicaciones nativas para dispositivos móviles, que pueden
+          descargarse a través de una App Store</p>
+        </div>
+        <div class="servicesBx">
+          <img src="./img/icon4.png">
+          <h2>Fotografía</h2>
+          <p>Participación en sesiones de fotos, con uso de cámara fotográfica
+          profesional en estudio fotográfico</p>
+        </div>
+        <div class="servicesBx">
+          <img src="./img/icon5.png">
+          <h2>Copywriting</h2>
+            <p>Escritura persuasiva y atrayente para empresas en distintas
+            redes sociales, para la generar fidelización de clientes</p>
+        </div>
+        <div class="servicesBx">
+          <img src="./img/icon6.png">
+          <h2>Video Edición</h2>
+          <p>Producción de videos destinados a empresas, para distintos eventos
+          (conferencias, charlas empresariales)</p>
+        </div>
+      </div>
+    </section>
+    <!-- WORK -->
+    <section class="work" id="work">
+        <div class="heading">
+          <h2>Mis trabajos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="content">
+          <div class="workBx">
+            <img src="./img/producto001.jpg" alt="">
+          </div>
+          <div class="workBx">
+            <img src="./img/producto002.jpg" alt="">
+          </div>
+          <div class="workBx">
+            <img src="./img/producto003.jpg" alt="">
+          </div>
+          <div class="workBx">
+            <img src="./img/producto004.jpg" alt="">
+          </div>
+        </div>
+        <div class="heading">
+          <a href="#" class="btn">Ver más</a>
+        </div>
+    </section>
+    <!-- TESTIMONIOS -->
+    <section class="testimonial" id="testimonios">
+      <div class="heading">
+        <h2>Testimonios</h2>
+        <p>Algunos testimonios por el resultado de mi trabajo y desempeño
+        en los proyectos realizados</p>
+        <div class="content">
+          <div class="testimonialBx">
+            <p>Benjamín notó de manera rápida las ineficiencias de nuestra web
+            y propuso soluciones efectivas. En conjunto con nuestro equipo se vieron buenos resultados
+           a través de la web que nos elaboró.</p>
+              <h3>César Pacheco<br/><span>Business Marketing</span> </h3>
+          </div>
+          <div class="testimonialBx">
+            <p>Las ideas innovadoras de Benjamín sobre el diseño de interfaces y la
+            experiencia de usuario en una plataforma web son muy eficientes.
+          La alegría de nuestros clientes al usar nuestra aplicación, son una gran muestra
+        de su dedicación y desempeño</p>
+              <h3>Someone Famoso <br/><span>Diseñador UX</span> </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+      <div class="heading">
+        <h2>Contáctame</h2>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Información de Contacto</h3>
+          <div class="contactInfoBox">
+            <ul>
+              <li>
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="textContact">
+                  <p> <strong>Ubicación</strong></p>
+                  <p class="text">Lima - Perú | Ate - Vitarte | Urb. Los Rosales</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="textContact">
+                <p><strong>Celular</strong></p>
+                  <p class="text">+51 922 900 862</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="textContact">
+                  <p><strong>Email</strong></p>
+                  <p class="text">benyaminmit147@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="formBx">
+          <form class="" action="index.html" method="post">
+            <h3>Mándame un mensaje</h3>
+            <input type="text" placeholder="Nombre Completo">
+            <input type="email" placeholder="Email">
+            <textarea  placeholder="Your Messasge"></textarea>
+            <input type="button" value="Enviar" id="enviar"><!--submit -->
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Copywriting -->
+    <div class="copyright">
+      <p>Copyright © Benjamin Ponce. Todos los derechos reservados</p>
+    </div>
+
+
+
+    <script type="text/javascript" src='portfolio.js'></script>
+  </body>
+</html>
